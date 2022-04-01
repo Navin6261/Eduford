@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford Website</title>
+    <!-- Google fonts connencting link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@200;300;500;600;700&family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome connecting link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="eduford.html"><img src="eduford_img/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="eduford.html">Home</a></li>
+            <li><a href="about-us.html">about</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!-- Course -->
+
+    <section class="course">
+      <h1>Courses We Offer </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum
+            illum reprehenderit optio velit facere illo ad! Ipsa sit ut
+            consectetur sapiente eos minima, placeat expedita molestiae.
+            Perspiciatis accusamus voluptatibus at quas adipisci, sit odio
+            recusandae repellendus hic magnam consectetur itaque tempora, quos
+            fugiat? Maxime repellat qui labore dolorum possimus!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum
+            illum reprehenderit optio velit facere illo ad! Ipsa sit ut
+            consectetur sapiente eos minima, placeat expedita molestiae.
+            Perspiciatis accusamus voluptatibus at quas adipisci, sit odio
+            recusandae repellendus hic magnam consectetur itaque tempora, quos
+            fugiat? Maxime repellat qui labore dolorum possimus!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum
+            illum reprehenderit optio velit facere illo ad! Ipsa sit ut
+            consectetur sapiente eos minima, placeat expedita molestiae.
+            Perspiciatis accusamus voluptatibus at quas adipisci, sit odio
+            recusandae repellendus hic magnam consectetur itaque tempora, quos
+            fugiat? Maxime repellat qui labore dolorum possimus!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- facilities -->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="row">
+          <div class="facilities-col">
+            <img src="eduford_img/library.png" alt="" />
+            <h3>Worldclass Library</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam atque
+              ea aut accusamus aliquam ullam eveniet velit excepturi vel rerum!
+            </p>
+          </div>
+          <div class="facilities-col">
+            <img src="eduford_img/basketball.png" alt="" />
+            <h3>Largest Playground</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam atque
+              ea aut accusamus aliquam ullam eveniet velit excepturi vel rerum!
+            </p>
+          </div>
+          <div class="facilities-col">
+            <img src="eduford_img/cafeteria.png" alt="" />
+            <h3>Tasty And Healthy Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam atque
+              ea aut accusamus aliquam ullam eveniet velit excepturi vel rerum!
+            </p>
+          </div>
+        </div>
+      </section>
+
+   
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima animi,
+        beatae molestiae provident sint placeat iste magnam <br />expedita iure
+        quis dolores alias eius ratione laboriosam architecto ipsum dignissimos
+        nam obcaecati?
+      </p>
+      <div class="icons">
+        <a
+          href="https://www.linkedin.com/in/navin-turkar-b90173191/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/naveen.turkar.1508/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/navin.turkar1508/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> By Navin Turkar</p>
+    </section>
+
+    <!-- java script for the toggle menu bar on clicking the bar button -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- top buttton javascript -->
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts connencting link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@200;300;500;600;700&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet"/>
+    <!-- font awesome connecting link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <title>Eduford Website</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="eduford.html"><img src="eduford_img/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="eduford.html">Home</a></li>
+            <li><a href="about-us.html">about</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact us</h1>
+    </section>
+<section class="Location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29650.43863934989!2d79.72218500000001!3d21.729704950000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2ac2b4894100a5%3A0x433f843c0bfaa082!2sMaheduli%2C%20Madhya%20Pradesh%20481449!5e0!3m2!1sen!2sin!4v1646230728877!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+    
+<section class="contact-us">
+  <div class="row">
+    <div>
+      <i class="fa-solid fa-house"></i>
+      <span>
+        <h5>XYZ Road, ABC Building</h5>
+        <p>Maheduli katangi balaghat</p>
+      </span>
+    </div>
+    <div>
+      <i class="fa-solid fa-phone"></i>
+      <span>
+        <h5>1272829720</h5>
+        <p>Monday to saturday 10am to 5pm.</p>
+      </span>
+    </div>
+    
+  </div>
+</section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima animi,
+        beatae molestiae provident sint placeat iste magnam <br />expedita iure
+        quis dolores alias eius ratione laboriosam architecto ipsum dignissimos
+        nam obcaecati?
+      </p>
+      <div class="icons">
+        <a
+          href="https://www.linkedin.com/in/navin-turkar-b90173191/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/naveen.turkar.1508/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/navin.turkar1508/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> By Navin Turkar</p>
+    </section>
+
+    <!-- java script for the toggle menu bar on clicking the bar button -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- top buttton javascript -->
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>

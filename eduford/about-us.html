@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford Website</title>
+    <!-- Google fonts connencting link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@200;300;500;600;700&family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome connecting link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="eduford.html"><img src="eduford_img/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="eduford.html">Home</a></li>
+            <li><a href="about-us.html">about</a></li>
+            <li><a href="course.html">course</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!-- About Us content -->
+    <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are World's Largest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          quibusdam enim velit ut repudiandae facere saepe corporis aliquid vero
+          nemo voluptatum recusandae alias delectus explicabo iste, accusamus
+          distinctio libero exercitationem dolore deleniti porro consectetur!
+          Tempore maxime earum corporis dolorem aperiam qui ducimus porro
+          fugiat. Assumenda non harum adipisci commodi aspernatur, vitae eum
+          quisquam dolor dolorum! Nulla doloremque veniam natus similique?
+        </p>
+        <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+      </div>
+      <div class="about-col">
+          <img src="eduford_img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima animi,
+        beatae molestiae provident sint placeat iste magnam <br />expedita iure
+        quis dolores alias eius ratione laboriosam architecto ipsum dignissimos
+        nam obcaecati?
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> By Navin Turkar</p>
+    </section>
+
+    <!-- java script for the toggle menu bar on clicking the bar button -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
